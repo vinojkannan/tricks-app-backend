@@ -2,8 +2,11 @@ from flask import Flask
 from app.routes import blueprint as api
 from db import db
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://ecom-vinoj.kannan@localhost:5432/mydb')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True

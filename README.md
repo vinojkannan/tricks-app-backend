@@ -29,3 +29,9 @@ https://flask-restplus.readthedocs.io/en/stable/scaling.html#multiple-namespaces
 https://flask-restplus.readthedocs.io/en/stable/scaling.html#use-with-blueprints
 https://flask-sqlalchemy.palletsprojects.com/en/2.x/
 ```
+
+### Heroku commands
+```
+heroku pg:psql --app=vtt-backend
+heroku logs --app vtt-backend
+```
