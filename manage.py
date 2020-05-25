@@ -14,8 +14,7 @@ def create_tables():
 
 app.register_blueprint(api)
 
-
-db.init_app(app)
-
-app.run(host='0.0.0.0')
+if __name__ == '__main__':
+  db.init_app(app)
+  app.run()
 
