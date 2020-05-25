@@ -4,7 +4,7 @@ from db import db
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DB_URL', 'postgresql://ecom-vinoj.kannan@localhost:5432/mydb')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://ecom-vinoj.kannan@localhost:5432/mydb')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 

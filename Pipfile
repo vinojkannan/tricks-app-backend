@@ -12,6 +12,7 @@ flask-restplus = "*"
 werkzeug = "==0.16.1"
 flask-sqlalchemy = "*"
 psycopg2 = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
