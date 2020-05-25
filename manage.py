@@ -13,8 +13,8 @@ def create_tables():
   db.create_all()
 
 app.register_blueprint(api)
+db.init_app(app)
 
 if __name__ == '__main__':
-  db.init_app(app)
   app.run()
 
