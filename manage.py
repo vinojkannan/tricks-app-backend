@@ -17,6 +17,5 @@ app.register_blueprint(api)
 
 db.init_app(app)
 
-port = os.getenv('APP_PORT', '5000')
-app.run(port=port)
+app.run(host='0.0.0.0')
 
